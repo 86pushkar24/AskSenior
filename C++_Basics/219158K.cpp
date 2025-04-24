@@ -1,22 +1,19 @@
 /*
  *	Author: Mr. PG
- *	Created: 25.04.2025 02:39:26 (GMT+5:30)
+ *	Created: 25.04.2025 02:44:29 (GMT+5:30)
  */
 #include "bits/stdc++.h"
 using namespace std;
 
 void solve()
 {
-    int a, b;
-    cin >> a >> b;
-    if (a >= b)
+    int a[3];
+    for (int i = 0; i < 3; i++)
     {
-        cout << "Yes";
+        cin >> a[i];
     }
-    else
-    {
-        cout << "No";
-    }
+    sort(a, a + 3);
+    cout << a[0] << " " << a[2] << endl;
 }
 
 signed main()
@@ -25,7 +22,7 @@ signed main()
     cin.tie(0);
     cout.tie(0);
     int t = 1;
-    // cin >> t;
+    // cin>>t;
     while (t--)
     {
         solve();
