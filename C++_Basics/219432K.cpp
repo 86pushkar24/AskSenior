@@ -1,20 +1,19 @@
 /*
  *	Author: Mr. PG
- *	Created: 25.04.2025 04:10:36 (GMT+5:30)
+ *	Created: 25.04.2025 13:36:15 (GMT+5:30)
  */
 #include "bits/stdc++.h"
 using namespace std;
-int gcd(int a , int b){
-    if(b % a == 0)return a;
-    return gcd(b % a, a);
-}
+
 void solve()
 {
-    int a, b;
-    cin >> a >> b;  
-    if(a > b)swap(a, b);
-    // cout << (__gcd(a, b)) << endl;
-    cout << (gcd(a, b)) << endl;
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+    {
+        if (n % i == 0)
+            cout << i << endl;
+    }
 }
 
 signed main()
